@@ -1,6 +1,6 @@
 {% set name = "radiospectra" %}
-{% set version = "0.1.2" %}
-{% set sha256 = "94840b28d38b6a811bec8e601a9bcf9d789e44fbeb3ebf173d303fcb38e7864a" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "677d3c82b60579f830639a6b0d08011f5e867cf47f9d566c3770cd21e1356d8b" %}
 
 package:
   name: {{ name|lower }}
@@ -23,11 +23,8 @@ requirements:
 
   run:
     - python
-    - sunpy >=0.8
+    - sunpy >=0.9
     - astropy >=2.0
-    - numpy
-    - scipy
-    - matplotlib
 
 test:
   imports:
