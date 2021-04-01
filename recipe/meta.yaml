@@ -15,15 +15,14 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  skip: true  # [py<37]
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - setuptools
 
   run:
-    - python
+    - python >=3.7
     - sunpy >=2.1
     - numpy
     - scipy
