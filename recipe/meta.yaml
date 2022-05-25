@@ -24,7 +24,7 @@ requirements:
 
   run:
     - python >=3.8
-    - sunpy >=4.-0
+    - sunpy >=4.0.0
 
 test:
   imports:
