@@ -32,15 +32,15 @@ requirements:
 test:
   imports:
     - radiospectra
-    - radiospectra.sources
-    - radiospectra.tests
+    - radiospectra.net
+    - radiospectra.spectrogram
+
 about:
   home: http://sunpy.org
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: Provide support for radio-spectra to sunpy
-
+  summary: Provide support for some type of radio spectra on solar physics
   doc_url: https://radiospectra.readthedocs.io/
   dev_url: https://github.com/sunpy/radiospectra
 
