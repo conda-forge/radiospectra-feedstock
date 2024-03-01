@@ -18,13 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - pip
-
   run:
-    - python >=3.8
-    - sunpy >=4.0.0
+    - python >=3.9
+    - sunpy >=5.0.0
+    - numpy
+    - matplotlib
+    - scipy
+    - cdflib >=0.3.20
 
 test:
   imports:
@@ -43,6 +46,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - dpshelio
+    - wtbarnes
     - cadair
-    - nabobalis
+    - samaloney
