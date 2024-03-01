@@ -25,7 +25,7 @@ requirements:
     - python >=3.9
     - sunpy >=5.0.0
     - numpy
-    - matplotlib
+    - matplotlib-base
     - scipy
     - cdflib >=0.3.20
 
