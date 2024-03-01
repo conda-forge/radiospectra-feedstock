@@ -7,7 +7,7 @@ Home: http://sunpy.org
 
 Package license: BSD-2-Clause
 
-Summary: Provide support for radio-spectra to sunpy
+Summary: Provide support for some type of radio spectra on solar physics
 
 Development: https://github.com/sunpy/radiospectra
 
@@ -148,6 +148,6 @@ Feedstock Maintainers
 =====================
 
 * [@cadair](https://github.com/cadair/)
-* [@dpshelio](https://github.com/dpshelio/)
-* [@nabobalis](https://github.com/nabobalis/)
+* [@samaloney](https://github.com/samaloney/)
+* [@wtbarnes](https://github.com/wtbarnes/)
 
