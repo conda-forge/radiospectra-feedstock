@@ -1,6 +1,7 @@
 {% set name = "radiospectra" %}
 {% set version = "0.6.1" %}
 {% set sha256 = "90fddd432381674ce33cc6ebd281e3c902b9e4c1d203ed57d6d233ebd385e492" %}
+{% set python_min = "3.10" %} 
 
 package:
   name: {{ name|lower }}
