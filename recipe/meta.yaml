@@ -1,6 +1,7 @@
 {% set name = "radiospectra" %}
 {% set version = "0.6.1" %}
 {% set sha256 = "90fddd432381674ce33cc6ebd281e3c902b9e4c1d203ed57d6d233ebd385e492" %}
+{% set python_min = "3.10" %} 
 
 package:
   name: {{ name|lower }}
@@ -12,17 +13,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - sunpy >=5.0.0
     - numpy
     - matplotlib-base
@@ -30,6 +31,8 @@ requirements:
     - cdflib >=0.3.20
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - radiospectra
     - radiospectra.net
