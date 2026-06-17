@@ -1,7 +1,7 @@
 {% set name = "radiospectra" %}
 {% set version = "0.7.0" %}
 {% set sha256 = "bdcc2ad3fefb1a194c27a9479d3fb62b84c1894e668a231f807d4c31d198ec6c" %}
-{% set python_min = "3.10" %} 
+{% set python_min = "3.12" %} 
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - sunpy >=5.0.0
+    - sunpy >=7.0.0
     - numpy
     - matplotlib-base
     - scipy
